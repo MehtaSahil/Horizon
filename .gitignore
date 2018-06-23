@@ -41,3 +41,4 @@
 /.nobuckcheck
 
 src/buck-out/*
+src/.buckd/*
