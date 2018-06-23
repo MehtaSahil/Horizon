@@ -40,4 +40,4 @@
 .fakebuckversion
 /.nobuckcheck
 
-src/*
+src/buck-out/*
