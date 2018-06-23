@@ -39,3 +39,5 @@
 /.bucklogging.local.properties
 .fakebuckversion
 /.nobuckcheck
+
+src/*
