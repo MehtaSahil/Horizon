@@ -14,7 +14,11 @@ simulation: person
 person:
 	$(CC) -c Person.cpp Person.hpp $(CFLAGS)
 
+tests: person
+	$(CC) -o test_person test/TestPerson.cpp Person.o $(CFLAGS)
+
 clean:
 	rm -f sim
 	rm -f *.gch
 	rm -f *.o
+	rm -f test_person
