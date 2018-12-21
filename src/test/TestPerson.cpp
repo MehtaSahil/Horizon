@@ -16,27 +16,12 @@ void TEST_initialize_person() {
   std::cout << "PASSED: TEST_initialize_person()\n";
 }
 
-void TEST_set_negative_person_id() {
-  int32_t test_id = 5;
-
-  Person p = Person(test_id);
-  assert(p.get_id() == test_id);
-
-  // Should not be able to overwrite valid person_id with negative person_id
-  p.set_id(-3);
-
-  assert(p.get_id() == test_id);
-
-  std::cout << "PASSED: TEST_set_negative_person_id()\n";
-}
-
 } // namespace tests
 } // namespace src
 
 int main(int argc, char** argv) {
 
   src::tests::TEST_initialize_person();
-  src::tests::TEST_set_negative_person_id();
 
   return 0;
 }
