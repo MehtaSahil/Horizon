@@ -8,11 +8,8 @@ EXEC_NAME = sim
 
 all: simulation
 
-simulation: adder
-	$(CC) -o $(EXEC_NAME) main.cpp adder.o $(CFLAGS)
-
-adder: adder.cpp adder.hpp
-	$(CC) -c adder.cpp adder.hpp $(CFLAGS)
+simulation: person
+	$(CC) -o $(EXEC_NAME) main.cpp Person.o $(CFLAGS)
 
 person:
 	$(CC) -c Person.cpp Person.hpp $(CFLAGS)
