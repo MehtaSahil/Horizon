@@ -14,6 +14,9 @@ simulation: adder
 adder: adder.cpp adder.hpp
 	$(CC) -c adder.cpp adder.hpp $(CFLAGS)
 
+person:
+	$(CC) -c Person.cpp Person.hpp $(CFLAGS)
+
 clean:
 	rm -f sim
 	rm -f *.gch
